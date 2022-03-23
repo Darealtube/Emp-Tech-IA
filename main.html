@@ -3,10 +3,15 @@
 <style>
   body {
     margin: 0;
+    font-family: "IBM Plex Sans", sans-serif;
+  }
+
+  h1 {
+    margin: 0;
   }
 
   .container {
-    height: 200vh;
+    height: 100%;
     background-image: url("./assets/main.png");
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -40,17 +45,92 @@
     left: 16px;
     bottom: 16px;
   }
+
+  .about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80vh;
+    margin-left: 24px;
+    margin-right: 24px;
+    width: 60vw;
+  }
+
+  .mission {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #483434;
+    height: 40vh;
+  }
+
+  .vision {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #992800;
+    height: 40vh;
+  }
 </style>
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;700&display=swap"
+  rel="stylesheet"
+/>
 
 <head>
   <title>IA</title>
 </head>
 
 <body>
-  <div class="container" id="about">
+  <div class="container">
+    <div class="appbar"></div>
+
     <div class="blur">
-      <div class="appbar">
-          
+      <div id="about" class="about">
+        <h1 style="color: whitesmoke; font-size: 12vmin">ABOUT US</h1>
+        <p
+          style="
+            color: whitesmoke;
+            text-justify: inter-word;
+            font-size: xx-large;
+          "
+        >
+          Maroyaka began as a simple idea of young entrepreneurs at Pasig City
+          Science High School until it became a dream and a commitment to
+          provide a high standard of food quality and service that can satisfy
+          customers of all ages and from all walks of life. The skills and
+          passion for baking of the shareholders of Sucre Jar Corporation
+          prompted them to open a small business that carefully and delightedly
+          crafts luscious pastries and cakes.
+        </p>
+      </div>
+
+      <div id="mission" class="mission">
+        <h1 style="color: whitesmoke; font-size: 12vmin">Mission</h1>
+        <p
+          style="color: whitesmoke; text-justify: inter-word; font-size: large"
+        >
+          To satisfy our customer's cravings through safe, appetising, and
+          quality sweet products at reasonable prices.
+        </p>
+      </div>
+
+      <div id="vision" class="vision">
+        <h1 style="color: whitesmoke; font-size: 12vmin">Vision</h1>
+        <p
+          style="color: whitesmoke; text-justify: inter-word; font-size: large"
+        >
+          To be the reason for our customer's genuine smile every day and
+          everywhere as we deliver through our great-tasting and affordable
+          sweets.
+        </p>
       </div>
     </div>
   </div>
