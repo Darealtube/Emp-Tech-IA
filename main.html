@@ -12,7 +12,8 @@
 
   .container {
     height: 100%;
-    background-image: url("./assets/main.png");
+    background-image: url("./assets/main.gif");
+    background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
   }
@@ -62,7 +63,8 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-color: #483434;
+    background-color: #ffd9d9;
+    color: #ff375d;
     height: 40vh;
   }
 
@@ -72,8 +74,66 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-color: #992800;
+    background-color: #ec85b5;
+    color: #f7ecde;
     height: 40vh;
+  }
+
+  .home2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffd9d9;
+    color: #ff375d;
+    height: 100vh;
+    padding-top: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .why {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #8b5151;
+    color: #f5adba;
+    min-height: 100vh;
+    max-height: 100%;
+    padding-top: 64px;
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+
+  .reasons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-grow: 1;
+    margin-top: 64px;
+  }
+
+  .reason {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 240px;
+    height: 240px;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #3d1717;
+    color: #ecabb7;
+    min-height: 100vh;
+    max-height: 100%;
+    padding-top: 64px;
+    padding-left: 64px;
+    padding-right: 64px;
   }
 </style>
 
@@ -94,13 +154,9 @@
 
     <div class="blur">
       <div id="about" class="about">
-        <h1 style="color: whitesmoke; font-size: 12vmin">ABOUT US</h1>
+        <h1 style="color: #3e000c; font-size: 12vmin">ABOUT US</h1>
         <p
-          style="
-            color: whitesmoke;
-            text-justify: inter-word;
-            font-size: xx-large;
-          "
+          style="color: #3e000c; text-justify: inter-word; font-size: xx-large"
         >
           Maroyaka began as a simple idea of young entrepreneurs at Pasig City
           Science High School until it became a dream and a commitment to
@@ -113,25 +169,132 @@
       </div>
 
       <div id="mission" class="mission">
-        <h1 style="color: whitesmoke; font-size: 12vmin">Mission</h1>
-        <p
-          style="color: whitesmoke; text-justify: inter-word; font-size: large"
-        >
+        <h1 style="font-size: 12vmin">Mission</h1>
+        <h2 style="text-justify: inter-word; font-size: x-large">
           To satisfy our customer's cravings through safe, appetising, and
           quality sweet products at reasonable prices.
-        </p>
+        </h2>
       </div>
 
       <div id="vision" class="vision">
-        <h1 style="color: whitesmoke; font-size: 12vmin">Vision</h1>
-        <p
-          style="color: whitesmoke; text-justify: inter-word; font-size: large"
-        >
+        <h1 style="font-size: 12vmin">Vision</h1>
+        <h2 style="text-justify: inter-word; font-size: x-large">
           To be the reason for our customer's genuine smile every day and
           everywhere as we deliver through our great-tasting and affordable
           sweets.
-        </p>
+        </h2>
       </div>
+
+      <div id="home2" class="home2">
+        <h1 style="font-size: 8vmin">
+          Open
+          <span style="color: #3e000c">12 PM to 6 PM</span>
+        </h1>
+
+        <h1>
+          from
+          <span style="color: #3e000c">Monday to Saturday</span>
+        </h1>
+
+        <h1 style="margin-top: 160px; font-size: 8vmin">8-681-3126</h1>
+
+        <div style="margin-top: 160px; text-align: center">
+          <h1>
+            Accepting online payment through
+            <span style="color: #3e000c">GCash</span> and
+            <span style="color: #3e000c">Paymaya</span>.
+          </h1>
+          <h1>
+            <span style="color: #3e000c">Click here</span> to place an online
+            order. Just browsing?
+            <span style="color: #3e000c">Click here</span> to view menu.
+          </h1>
+          <h1>
+            We accept same day phone orders with a minimum of 2 hours notice,
+            subject to availability.
+          </h1>
+        </div>
+      </div>
+
+      <div id="why_maroyaka" class="why">
+        <h1 style="font-size: 12vmin">Why Maroyaka?</h1>
+        <div class="reasons">
+          <div class="reason">
+            <h1 style="font-size: 6vmin">
+              <span style="color: #3e000c">M</span>ellow
+            </h1>
+            <p>
+              Maroyaka will make you feel the mellow textured treats that will
+              give your day a perfect feels.
+            </p>
+          </div>
+          <div class="reason">
+            <h1 style="font-size: 6vmin">
+              <span style="color: #3e000c">A</span>esthetic
+            </h1>
+            <p>
+              We offer a variety of elegant-looking products ready to be
+              featured on your social media pages.
+            </p>
+          </div>
+          <div class="reason">
+            <h1 style="font-size: 6vmin">
+              <span style="color: #3e000c">R</span>efreshing
+            </h1>
+            <p>
+              Our products guarantee you a new taste that will shake your whole
+              being.
+            </p>
+          </div>
+          <div class="reason">
+            <h1 style="font-size: 6vmin">
+              <span style="color: #3e000c">O</span>pulent
+            </h1>
+            <p>
+              Despite our product's low cost, we'll make sure to provide you
+              high-quality sweets that you'll never forget.
+            </p>
+          </div>
+          <div class="reason">
+            <h1 style="font-size: 6vmin">
+              <span style="color: #3e000c">Y</span>earned
+            </h1>
+            <p>
+              It will certainly leave a longing feeling of wanting to taste it
+              again. Eat on Repeat.
+            </p>
+          </div>
+          <div class="reason">
+            <h1 style="font-size: 6vmin">
+              <span style="color: #3e000c">A</span>ffordable
+            </h1>
+            <p>
+              With our products, you can already satisfy your cravings while
+              keeping your savings.
+            </p>
+          </div>
+          <div class="reason">
+            <h1 style="font-size: 6vmin">
+              <span style="color: #3e000c">K</span>een
+            </h1>
+            <p>
+              SJ Corporation is very eager to serve the products for customers
+              of all ages.
+            </p>
+          </div>
+          <div class="reason">
+            <h1 style="font-size: 6vmin">
+              <span style="color: #3e000c">A</span>ppetizing
+            </h1>
+            <p>
+              Nothing is more appetizing than sweet delicacies that are
+              lusciously made so warm your soul with cakes and pastries!
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu"></div>
     </div>
   </div>
 </body>
