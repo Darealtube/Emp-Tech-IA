@@ -55,31 +55,41 @@
         z-index: 99;
       "
     >
-      <table width="35%">
+      <table width="50%">
         <nav>
           <tr>
             <td align="center">
-              <img src="./assets/logo.png"
-              height="80"
-              >
-              </td>
+              <img
+                src="./assets/logo.png"
+                height="80"
+                style="margin-right: 32px"
+              />
+            </td>
             <td align="center">
-              <a href="#about" style="color: inherit; text-decoration: none; padding:10px" 
+              <a
+                href="#about"
+                style="color: inherit; text-decoration: none; padding: 10px"
                 ><b>About Us</b></a
               >
             </td>
             <td align="center">
-              <a href="#Homepage" style="color: inherit; text-decoration: none; padding:10px" 
+              <a
+                href="#Homepage"
+                style="color: inherit; text-decoration: none; padding: 10px"
                 ><b>Home</b></a
               >
             </td>
             <td align="center">
-              <a href="#menu" style="color: inherit; text-decoration: none; padding:10px" 
+              <a
+                href="#menu"
+                style="color: inherit; text-decoration: none; padding: 10px"
                 ><b>Menu</b></a
               >
             </td>
             <td align="center">
-              <a href="#" style="color: inherit; text-decoration: none; padding:10px" 
+              <a
+                href="#"
+                style="color: inherit; text-decoration: none; padding: 10px"
                 ><b>Contact Us</b></a
               >
             </td>
@@ -89,15 +99,24 @@
     </div>
 
     <div class="blur">
-      <span id="about" style="position: relative; top: -300px;"></span>
-      <div style="margin: 24px; padding: 24px">
+      <div
+        id="promotion"
+        style="
+          background-image: url(./assets/promotional.png);
+          height: 100vh;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+        "
+      ></div>
+
+      <span id="about" style="position: relative; top: -300px"></span>
+      <div style="margin: 24px; padding: 24px; color: #3e000c">
         <div>
-          <h1 style="color: #3e000c; font-size: 12vmin">ABOUT US</h1>
+          <h1 style="font-size: 12vmin">ABOUT US</h1>
         </div>
         <div>
-          <p
-            style="color: #3e000c; text-justify: inter-word; font-size: x-large"
-          >
+          <p style="font-size: x-large">
             <strong>
               Maroyaka began as a simple idea of young entrepreneurs at Pasig
               City Science High School until it became a dream and a commitment
@@ -115,7 +134,7 @@
         id="mission"
         style="
           text-align: center;
-          background-color: #ffd9d9;
+          background-color: #ffd9d9ab;
           color: #ff375d;
           padding: 64px;
         "
@@ -124,7 +143,7 @@
           <h1 style="font-size: 12vmin">Mission</h1>
         </div>
         <div>
-          <h2 style="text-justify: inter-word; font-size: x-large">
+          <h2 style="font-size: x-large">
             To satisfy our customer's cravings through safe, appetising, and
             quality sweet products at reasonable prices.
           </h2>
@@ -135,13 +154,13 @@
         id="vision"
         style="
           text-align: center;
-          background-color: #ec85b5;
+          background-color: #ec85b5bd;
           color: #f7ecde;
           padding: 64px;
         "
       >
         <h1 style="font-size: 12vmin">Vision</h1>
-        <h2 style="text-justify: inter-word; font-size: x-large">
+        <h2 style="font-size: x-large">
           To be the reason for our customer's genuine smile every day and
           everywhere as we deliver through our great-tasting and affordable
           sweets.
@@ -151,20 +170,9 @@
       <span id="Homepage"></span>
 
       <div
-        id="promotion"
-        style="
-          background-image: url(./assets/promotional.png);
-          height: 100vh;
-          background-size: contain;
-          background-repeat: no-repeat;
-          background-position: center;
-        "
-      ></div>
-
-      <div
         id="home2"
         style="
-          background-color: #ffd9d9;
+          background-color: #ffd9d9b2;
           color: #ff375d;
           padding: 32px;
           text-align: center;
@@ -210,7 +218,7 @@
         id="why_maroyaka"
         style="
           text-align: center;
-          background-color: #8b5151;
+          background-color: #8b5151ce;
           color: #f5adba;
           padding: 64px;
         "
@@ -362,7 +370,7 @@
         id="menu"
         style="
           text-align: center;
-          background-color: #3d1717;
+          background-color: #3d1717b9;
           color: #ecabb7;
           padding: 32px;
         "
@@ -382,7 +390,12 @@
 
       <div
         id="cakes"
-        style="background-color: #773030; color: #f3a0af; padding: 32px"
+        style="
+          background-color: #773030c7;
+          color: #f3a0af;
+          padding: 32px;
+          text-align: center;
+        "
       >
         <table style="height: 100%">
           <tr>
@@ -428,17 +441,6 @@
             </td>
 
             <td>
-              <h1>Available Flavors</h1>
-              <ul>
-                <li><h4>Chocolate Cake</h4></li>
-                <li><h4>Red Velvet Cake</h4></li>
-                <li><h4>Blueberry Cheesecake</h4></li>
-                <li><h4>Strawberry Cheesecake</h4></li>
-              </ul>
-            </td>
-          </tr>
-          <tr>
-            <td>
               <h2>
                 A fine-textured bread-like dessert that is sweet and usually
                 soft and often in layers with a sweet filling like chocolate
@@ -447,13 +449,22 @@
                 your family and loved ones!
               </h2>
             </td>
+          </tr>
+          <tr>
+            <td>
+              <h1>Available Flavors</h1>
+
+              <h4>Chocolate Cake</h4>
+              <h4>Red Velvet Cake</h4>
+              <h4>Blueberry Cheesecake</h4>
+              <h4>Strawberry Cheesecake</h4>
+            </td>
             <td>
               <h1>Available sizes</h1>
-              <ul>
-                <li><h4>Gotta Have It (10-inch)</h4></li>
-                <li><h4>Love It (8-inch)</h4></li>
-                <li><h4>Like It (6-inch)</h4></li>
-              </ul>
+
+              <h4>Gotta Have It (10-inch)</h4>
+              <h4>Love It (8-inch)</h4>
+              <h4>Like It (6-inch)</h4>
             </td>
           </tr>
         </table>
@@ -461,7 +472,12 @@
 
       <div
         id="cookies"
-        style="background-color: #c48e8e; color: #241e1f; padding: 32px"
+        style="
+          background-color: #c48e8ed5;
+          color: #241e1f;
+          padding: 32px;
+          text-align: center;
+        "
       >
         <table style="height: 100%">
           <tr>
@@ -500,29 +516,27 @@
             </td>
 
             <td>
-              <h1>Available Flavors</h1>
-              <ul>
-                <li><h4>Chocolate Chip Cookies</h4></li>
-                <li><h4>Red Velvet Cookies</h4></li>
-                <li><h4>Cookies n' Cream Cookies</h4></li>
-              </ul>
-            </td>
-          </tr>
-          <tr>
-            <td>
               <h2>
                 A sweet baked snack that has a chewy texture and a buttery
                 flavor mixed with a variety of ingredients. It is a bite-sized
                 dessert that you can enjoy on any occasion.
               </h2>
             </td>
+          </tr>
+          <tr>
+            <td>
+              <h1>Available Flavors</h1>
+
+              <h4>Chocolate Chip Cookies</h4>
+              <h4>Red Velvet Cookies</h4>
+              <h4>Cookies n' Cream Cookies</h4>
+            </td>
             <td>
               <h1>Available sizes</h1>
-              <ul>
-                <li><h4>Gotta Have It (12 pcs)</h4></li>
-                <li><h4>Love It (9 pcs)</h4></li>
-                <li><h4>Like It (6 pcs)</h4></li>
-              </ul>
+
+              <h4>Gotta Have It (12 pcs)</h4>
+              <h4>Love It (9 pcs)</h4>
+              <h4>Like It (6 pcs)</h4>
             </td>
           </tr>
         </table>
@@ -530,7 +544,12 @@
 
       <div
         id="float"
-        style="background-color: #cf80c5; color: #ffd1d8; padding: 32px"
+        style="
+          background-color: #cf80c5bd;
+          color: #ffd1d8;
+          padding: 32px;
+          text-align: center;
+        "
       >
         <table style="height: 100%">
           <tr>
@@ -560,15 +579,6 @@
             </td>
 
             <td>
-              <h1>Available Flavors</h1>
-              <ul>
-                <li><h4>Mango Graham</h4></li>
-                <li><h4>Oreo</h4></li>
-              </ul>
-            </td>
-          </tr>
-          <tr>
-            <td>
               <h2>
                 A chilly sweet drink made with condensed milk, whipped cream,
                 shaved ice, and sugar. Available in two varieties; Mango Graham
@@ -576,13 +586,20 @@
                 milk. Perfect for summer!
               </h2>
             </td>
+          </tr>
+          <tr>
+            <td>
+              <h1>Available Flavors</h1>
+
+              <h4>Mango Graham</h4>
+              <h4>Oreo</h4>
+            </td>
             <td>
               <h1>Available sizes</h1>
-              <ul>
-                <li><h4>Gotta Have It (800 mL)</h4></li>
-                <li><h4>Love It (500 mL)</h4></li>
-                <li><h4>Like It (350 mL)</h4></li>
-              </ul>
+
+              <h4>Gotta Have It (800 mL)</h4>
+              <h4>Love It (500 mL)</h4>
+              <h4>Like It (350 mL)</h4>
             </td>
           </tr>
         </table>
@@ -590,7 +607,12 @@
 
       <div
         id="grahamballs"
-        style="background-color: #e99d7f; color: #f1dde0; padding: 32px"
+        style="
+          background-color: #e99d7fc4;
+          color: #f1dde0;
+          padding: 32px;
+          text-align: center;
+        "
       >
         <table style="height: 100%">
           <tr>
@@ -607,17 +629,6 @@
             </td>
 
             <td>
-              <h1>Available Flavors</h1>
-              <ul>
-                <li><h4>Powdered Sugar</h4></li>
-                <li><h4>Chocolate sprinkles</h4></li>
-                <li><h4>Sweet candy sprinkles</h4></li>
-              </ul>
-            </td>
-          </tr>
-
-          <tr>
-            <td>
               <h2>
                 A dessert made out of crushed graham crackers, condensed milk,
                 and all-purpose cream shaped into balls. Munch-sized snacks
@@ -626,13 +637,22 @@
                 will truly make you fall in love.
               </h2>
             </td>
+          </tr>
+
+          <tr>
+            <td>
+              <h1>Available Flavors</h1>
+
+              <h4>Powdered Sugar</h4>
+              <h4>Chocolate sprinkles</h4>
+              <h4>Sweet candy sprinkles</h4>
+            </td>
             <td>
               <h1>Available sizes</h1>
-              <ul>
-                <li><h4>Gotta Have It (18 pcs)</h4></li>
-                <li><h4>Love It (10 pcs)</h4></li>
-                <li><h4>Like It (6 pcs)</h4></li>
-              </ul>
+
+              <h4>Gotta Have It (18 pcs)</h4>
+              <h4>Love It (10 pcs)</h4>
+              <h4>Like It (6 pcs)</h4>
             </td>
           </tr>
         </table>
@@ -640,7 +660,12 @@
 
       <div
         id="S'mores"
-        style="background-color: #e7d2ca; color: #f3a939; padding: 32px"
+        style="
+          background-color: #e7d2cace;
+          color: #f3a939;
+          padding: 32px;
+          text-align: center;
+        "
       >
         <table style="height: 100%">
           <tr>
@@ -655,9 +680,6 @@
                 height="400px"
               />
             </td>
-          </tr>
-
-          <tr>
             <td>
               <h2>
                 A dessert made out of crushed graham crackers, condensed milk,
@@ -667,14 +689,17 @@
                 will truly make you fall in love.
               </h2>
             </td>
+          </tr>
+
+          <tr>
             <td>
               <h1>Available sizes</h1>
-              <ul>
-                <li><h4>Gotta Have It (12 pcs)</h4></li>
-                <li><h4>Love It (8 pcs)</h4></li>
-                <li><h4>Like It (6 pcs)</h4></li>
-              </ul>
+
+              <h4>Gotta Have It (12 pcs)</h4>
+              <h4>Love It (8 pcs)</h4>
+              <h4>Like It (6 pcs)</h4>
             </td>
+            <td></td>
           </tr>
         </table>
       </div>
