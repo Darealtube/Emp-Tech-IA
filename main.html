@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 
 <style>
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     margin: 0;
     font-family: "IBM Plex Sans", sans-serif;
@@ -22,119 +26,6 @@
     height: 100%;
     backdrop-filter: blur(8px);
   }
-
-  .appbar {
-    width: 100%;
-    height: 12vh;
-    background-color: brown;
-  }
-
-  .box {
-    width: 160px;
-    height: 160px;
-    background-color: beige;
-    border: 4px solid brown;
-    border-radius: 2%;
-    margin-top: 8px;
-    margin-left: 8px;
-  }
-
-  .boxImage {
-    width: 160px;
-    height: 160px;
-    position: relative;
-    left: 16px;
-    bottom: 16px;
-  }
-
-  .about {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 80vh;
-    margin-left: 24px;
-    margin-right: 24px;
-    width: 60vw;
-  }
-
-  .mission {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    background-color: #ffd9d9;
-    color: #ff375d;
-    height: 40vh;
-  }
-
-  .vision {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    background-color: #ec85b5;
-    color: #f7ecde;
-    height: 40vh;
-  }
-
-  .home2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #ffd9d9;
-    color: #ff375d;
-    height: 100vh;
-    padding-top: 16px;
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-
-  .why {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    background-color: #8b5151;
-    color: #f5adba;
-    min-height: 100vh;
-    max-height: 100%;
-    padding-top: 64px;
-    padding-left: 64px;
-    padding-right: 64px;
-  }
-
-  .reasons {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    flex-grow: 1;
-    margin-top: 64px;
-  }
-
-  .reason {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    width: 240px;
-    height: 240px;
-    margin-left: 16px;
-    margin-right: 16px;
-  }
-
-  .menu {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    background-color: #3d1717;
-    color: #ecabb7;
-    min-height: 100vh;
-    max-height: 100%;
-    padding-top: 64px;
-    padding-left: 64px;
-    padding-right: 64px;
-  }
 </style>
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -150,10 +41,22 @@
 
 <body>
   <div class="container">
-    <div class="appbar" style="position: sticky; top: 0; z-index: 99">
-      <table align="center" , width="30%">
+    <div
+      style="
+        padding: 32px;
+        background: linear-gradient(
+          90deg,
+          rgba(124, 6, 173, 1) 6%,
+          rgba(253, 41, 41, 1) 96%
+        );
+        color: #f7ecde;
+        position: sticky;
+        top: 0;
+        z-index: 99;
+      "
+    >
+      <table width="30%">
         <nav>
-          <br />
           <tr>
             <td align="center">
               <a href="#about" style="color: inherit; text-decoration: none"
@@ -166,8 +69,8 @@
               >
             </td>
             <td align="center">
-              <a href="#" style="color: inherit; text-decoration: none"
-                ><b>Our Stores</b></a
+              <a href="#menu" style="color: inherit; text-decoration: none"
+                ><b>Menu</b></a
               >
             </td>
             <td align="center">
@@ -181,30 +84,56 @@
     </div>
 
     <div class="blur">
-      <div id="about" class="about">
-        <h1 style="color: #3e000c; font-size: 12vmin">ABOUT US</h1>
-        <p
-          style="color: #3e000c; text-justify: inter-word; font-size: xx-large"
-        >
-          Maroyaka began as a simple idea of young entrepreneurs at Pasig City
-          Science High School until it became a dream and a commitment to
-          provide a high standard of food quality and service that can satisfy
-          customers of all ages and from all walks of life. The skills and
-          passion for baking of the shareholders of Sucre Jar Corporation
-          prompted them to open a small business that carefully and delightedly
-          crafts luscious pastries and cakes.
-        </p>
+      <div id="about" style="margin: 24px; padding: 24px">
+        <div>
+          <h1 style="color: #3e000c; font-size: 12vmin">ABOUT US</h1>
+        </div>
+        <div>
+          <p
+            style="color: #3e000c; text-justify: inter-word; font-size: x-large"
+          >
+            <strong>
+              Maroyaka began as a simple idea of young entrepreneurs at Pasig
+              City Science High School until it became a dream and a commitment
+              to provide a high standard of food quality and service that can
+              satisfy customers of all ages and from all walks of life. The
+              skills and passion for baking of the shareholders of Sucre Jar
+              Corporation prompted them to open a small business that carefully
+              and delightedly crafts luscious pastries and cakes.
+            </strong>
+          </p>
+        </div>
       </div>
 
-      <div id="mission" class="mission">
-        <h1 style="font-size: 12vmin">Mission</h1>
-        <h2 style="text-justify: inter-word; font-size: x-large">
-          To satisfy our customer's cravings through safe, appetising, and
-          quality sweet products at reasonable prices.
-        </h2>
+      <div
+        id="mission"
+        style="
+          text-align: center;
+          background-color: #ffd9d9;
+          color: #ff375d;
+          padding: 64px;
+        "
+      >
+        <div>
+          <h1 style="font-size: 12vmin">Mission</h1>
+        </div>
+        <div>
+          <h2 style="text-justify: inter-word; font-size: x-large">
+            To satisfy our customer's cravings through safe, appetising, and
+            quality sweet products at reasonable prices.
+          </h2>
+        </div>
       </div>
 
-      <div id="vision" class="vision">
+      <div
+        id="vision"
+        style="
+          text-align: center;
+          background-color: #ec85b5;
+          color: #f7ecde;
+          padding: 64px;
+        "
+      >
         <h1 style="font-size: 12vmin">Vision</h1>
         <h2 style="text-justify: inter-word; font-size: x-large">
           To be the reason for our customer's genuine smile every day and
@@ -213,18 +142,43 @@
         </h2>
       </div>
 
-      <div id="home2" class="home2">
-        <h1 style="font-size: 8vmin">
-          Open
-          <span style="color: #3e000c">12 PM to 6 PM</span>
-        </h1>
+      <div
+        id="promotion"
+        style="
+          background-image: url(./assets/promotional.png);
+          height: 100vh;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+        "
+      ></div>
 
-        <h1>
-          from
-          <span style="color: #3e000c">Monday to Saturday</span>
-        </h1>
+      <div
+        id="home2"
+        style="
+          background-color: #ffd9d9;
+          color: #ff375d;
+          padding: 32px;
+          text-align: center;
+        "
+      >
+        <div>
+          <h1 style="font-size: 8vmin">
+            Open
+            <span style="color: #3e000c">12 PM to 6 PM</span>
+          </h1>
+        </div>
 
-        <h1 style="margin-top: 160px; font-size: 8vmin">8-681-3126</h1>
+        <div>
+          <h1>
+            from
+            <span style="color: #3e000c">Monday to Saturday</span>
+          </h1>
+        </div>
+
+        <div style="margin-top: 160px">
+          <h1 style="font-size: 8vmin">8-681-3126</h1>
+        </div>
 
         <div style="margin-top: 160px; text-align: center">
           <h1>
@@ -244,10 +198,35 @@
         </div>
       </div>
 
-      <div id="why_maroyaka" class="why">
-        <h1 style="font-size: 12vmin">Why Maroyaka?</h1>
-        <div class="reasons">
-          <div class="reason">
+      <div
+        id="why_maroyaka"
+        style="
+          text-align: center;
+          background-color: #8b5151;
+          color: #f5adba;
+          padding: 64px;
+        "
+      >
+        <div>
+          <h1 style="font-size: 12vmin">Why Maroyaka?</h1>
+        </div>
+        <div
+          style="
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            flex-grow: 1;
+            margin-top: 64px;
+          "
+        >
+          <div
+            style="
+              width: 320px;
+              height: 320px;
+              margin-left: 16px;
+              margin-right: 16px;
+            "
+          >
             <h1 style="font-size: 6vmin">
               <span style="color: #3e000c">M</span>ellow
             </h1>
@@ -256,7 +235,14 @@
               give your day a perfect feels.
             </p>
           </div>
-          <div class="reason">
+          <div
+            style="
+              width: 320px;
+              height: 320px;
+              margin-left: 16px;
+              margin-right: 16px;
+            "
+          >
             <h1 style="font-size: 6vmin">
               <span style="color: #3e000c">A</span>esthetic
             </h1>
@@ -265,7 +251,14 @@
               featured on your social media pages.
             </p>
           </div>
-          <div class="reason">
+          <div
+            style="
+              width: 320px;
+              height: 320px;
+              margin-left: 16px;
+              margin-right: 16px;
+            "
+          >
             <h1 style="font-size: 6vmin">
               <span style="color: #3e000c">R</span>efreshing
             </h1>
@@ -274,7 +267,14 @@
               being.
             </p>
           </div>
-          <div class="reason">
+          <div
+            style="
+              width: 320px;
+              height: 320px;
+              margin-left: 16px;
+              margin-right: 16px;
+            "
+          >
             <h1 style="font-size: 6vmin">
               <span style="color: #3e000c">O</span>pulent
             </h1>
@@ -283,7 +283,14 @@
               high-quality sweets that you'll never forget.
             </p>
           </div>
-          <div class="reason">
+          <div
+            style="
+              width: 320px;
+              height: 320px;
+              margin-left: 16px;
+              margin-right: 16px;
+            "
+          >
             <h1 style="font-size: 6vmin">
               <span style="color: #3e000c">Y</span>earned
             </h1>
@@ -292,7 +299,14 @@
               again. Eat on Repeat.
             </p>
           </div>
-          <div class="reason">
+          <div
+            style="
+              width: 320px;
+              height: 320px;
+              margin-left: 16px;
+              margin-right: 16px;
+            "
+          >
             <h1 style="font-size: 6vmin">
               <span style="color: #3e000c">A</span>ffordable
             </h1>
@@ -301,7 +315,14 @@
               keeping your savings.
             </p>
           </div>
-          <div class="reason">
+          <div
+            style="
+              width: 320px;
+              height: 320px;
+              margin-left: 16px;
+              margin-right: 16px;
+            "
+          >
             <h1 style="font-size: 6vmin">
               <span style="color: #3e000c">K</span>een
             </h1>
@@ -310,7 +331,14 @@
               of all ages.
             </p>
           </div>
-          <div class="reason">
+          <div
+            style="
+              width: 320px;
+              height: 320px;
+              margin-left: 16px;
+              margin-right: 16px;
+            "
+          >
             <h1 style="font-size: 6vmin">
               <span style="color: #3e000c">A</span>ppetizing
             </h1>
@@ -322,7 +350,35 @@
         </div>
       </div>
 
-      <div class="menu"></div>
+      <div
+        id="menu"
+        style="
+          text-align: center;
+          background-color: #3d1717;
+          color: #ecabb7;
+          padding: 32px;
+        "
+      >
+        <h2>
+          We at Maroyaka satisfy your cravings by providing you easy access to
+          sweet delicacies that can be bought at a reasonable price.
+        </h2>
+        <h2>
+          “Satisfy your cravings at an affordable price”. Desserts such as
+          cakes, cheesecakes, and other pastries are often expensive — and yes,
+          even in your local bakeshops. Thus, we came up with producing
+          high-quality desserts that not only can satisfy your taste buds but
+          can also be bought at a reasonable price.
+        </h2>
+
+
+      </div>
+
+      <div id="">
+
+      </div>
+
+
     </div>
   </div>
 </body>
